@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id='title'>Survey Form</h1>
+    <p id='description'>Grateful for your valuable input in completing our survey form!</p>
+    <form id='survey-form'>
+      <fieldset>
+        <label id='name-label'>Name: <input id='name' name='name' type='text' placeholder='Enter your name' required/></label>
+        <label id='email-label'>Email: <input id='email' name='email' type='email' placeholder='Enter your email' required/></label>
+        <label id='number-label'>Age: <input id='number' name='age' type='number' placeholder='Enter your age' min='12' max='99' /></label>
+      </fieldset>
+      <fieldset>
+        <label id='dropdown-label'>How did you hear about us? <select id='dropdown'>
+            <option value="">(select one)</option>
+            <option value="1">Instagram</option>
+            <option value="2">Facebook</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Gender: </legend>
+        <label for="male"><input id="male" type="radio" name="gender" value='m' class='inline' checked /> Male</label>
+        <label for="female"><input id="female" type="radio" name="gender" value='f' class='inline' /> Female</label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose your favourate coding language:</legend>
+        <label for="java"><input type="checkbox" id="java" name="java" value='Java' checked class='inline' /> Java</label>
+        <label for="c++"><input type="checkbox" id="c++" name="c++" value='C++' checked class='inline' /> C++</label>
+        <label for="python"><input type="checkbox" id="python" name="python" value='Python' checked class='inline' /> Python</label>
+      </fieldset>
+      <label for="bio">Provide a note:
+          <textarea id="note" name="note" rows="3" cols="30" placeholder="I like to change..."></textarea>
+      </label>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
